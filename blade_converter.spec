@@ -73,7 +73,7 @@ if sys.platform == "darwin":
     app = BUNDLE(
         coll,
         name="LaravelBladeConverter.app",
-        icon="assets/icon.ico",
+        icon="assets/icon.icns",
         bundle_identifier="in.imdevops.laravelbladeconverter",
         info_plist={
             "CFBundleShortVersionString": "1.0.0",
