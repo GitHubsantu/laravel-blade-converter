@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/)
 [![PySide6](https://img.shields.io/badge/UI-PySide6-41cd52.svg)](https://doc.qt.io/qtforpython/)
-[![Build Executables](https://img.shields.io/github/actions/workflow/status/imdevops/laravel-blade-converter/build.yml?label=build)](../../actions)
+[![Build Executables](https://img.shields.io/github/actions/workflow/status/githubsantu/laravel-blade-converter/build.yml?label=build)](../../actions)
 
 A production-quality **PySide6 desktop application** that converts legacy
 **LaravelCollective** Blade syntax (`Form::`, `Html::`, `link_to_route`) into
