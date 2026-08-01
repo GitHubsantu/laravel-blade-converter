@@ -5,6 +5,7 @@ venv/
 *.bak
 build/
 dist/
+Output/
 *.egg-info/
 .pytest_cache/
 *.spec.bak

@@ -23,8 +23,6 @@ from PySide6.QtWidgets import QApplication
 from PySide6.QtGui import QIcon
 
 log = get_logger("main")
-app = QApplication(sys.argv)
-app.setWindowIcon(QIcon("assets/icon.ico"))
 
 def main() -> int:
     configure_logging()

@@ -12,6 +12,7 @@ from typing import Optional
 
 from PySide6.QtCore import Qt
 from PySide6.QtGui import QAction, QIcon, QKeySequence
+from ui.about_dialog import AboutDialog
 from PySide6.QtWidgets import (
     QApplication,
     QDockWidget,
@@ -443,18 +444,9 @@ class MainWindow(QMainWindow):
         self.original_editor.set_dark(dark)
         self.converted_editor.set_dark(dark)
 
-    def show_about(self) -> None:
-        QMessageBox.about(
-            self,
-            "About Laravel Blade Converter",
-            "Laravel Blade Converter\n\n"
-            "Converts LaravelCollective Blade syntax into native Laravel 12 Blade/HTML.\n\n"
-            "Developer\n"
-            "imdevops\n\n"
-            "GitHub\n"
-            "https://github.com/GitHubsantu\n\n"
-            "Built with PySide6."
-        )
+    def show_about(self):
+        dialog = AboutDialog(self)
+        dialog.exec()
 
     # ------------------------------------------------------------------
     def _on_log_record(self, level: str, message: str) -> None:
