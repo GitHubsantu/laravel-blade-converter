@@ -55,7 +55,7 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=None,  # set to "resources/icon.ico" (Win) / "resources/icon.icns" (macOS) if you add one
+    icon="assets/icon.ico",
 )
 
 coll = COLLECT(
@@ -73,7 +73,7 @@ if sys.platform == "darwin":
     app = BUNDLE(
         coll,
         name="LaravelBladeConverter.app",
-        icon=None,
+        icon="assets/icon.ico",
         bundle_identifier="in.imdevops.laravelbladeconverter",
         info_plist={
             "CFBundleShortVersionString": "1.0.0",

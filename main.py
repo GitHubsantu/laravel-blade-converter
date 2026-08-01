@@ -19,15 +19,20 @@ from PySide6.QtWidgets import QApplication
 from core.app_logger import configure_logging, get_logger
 from ui.main_window import MainWindow
 from ui.theme_manager import ThemeManager
+from PySide6.QtWidgets import QApplication
+from PySide6.QtGui import QIcon
 
 log = get_logger("main")
-
+app = QApplication(sys.argv)
+app.setWindowIcon(QIcon("assets/icon.ico"))
 
 def main() -> int:
     configure_logging()
     log.info("Starting Laravel Blade Converter")
 
     app = QApplication(sys.argv)
+
+    app.setWindowIcon(QIcon("assets/icon.ico"))
     app.setApplicationName("Laravel Blade Converter")
     app.setOrganizationName("imdevops")
 

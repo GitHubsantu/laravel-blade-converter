@@ -56,6 +56,7 @@ class MainWindow(QMainWindow):
         self.last_report: Optional[ConversionReport] = None
 
         self.setWindowTitle("Laravel Blade Converter")
+        self.setWindowIcon(QIcon("assets/icon.ico"))
         self.resize(1400, 900)
 
         self._build_docks()
@@ -444,11 +445,15 @@ class MainWindow(QMainWindow):
 
     def show_about(self) -> None:
         QMessageBox.about(
-            self, "About Laravel Blade Converter",
+            self,
+            "About Laravel Blade Converter",
             "Laravel Blade Converter\n\n"
-            "Converts LaravelCollective Blade syntax (Form::, Html::, link_to_route)\n"
-            "into native Laravel 12 Blade/HTML using a real recursive-descent parser.\n\n"
-            "Built with PySide6.",
+            "Converts LaravelCollective Blade syntax into native Laravel 12 Blade/HTML.\n\n"
+            "Developer\n"
+            "imdevops\n\n"
+            "GitHub\n"
+            "https://github.com/GitHubsantu\n\n"
+            "Built with PySide6."
         )
 
     # ------------------------------------------------------------------
